@@ -32,17 +32,19 @@ cd DocumentSetting
 
 Codex에서 이 폴더를 프로젝트로 열고 문서 작업을 요청한다. `AGENTS.md`가 공통 규칙과 레퍼런스의 읽기 순서를 안내한다.
 
-### 개인 스킬로 사용 (Windows PowerShell)
+이 방식에서 `AGENTS.md`는 복제한 저장소 안에서 작업할 때 적용된다. 다른 프로젝트에서도 `document-writing` 스킬을 자동으로 사용하려면 아래 사용자 스킬 경로에 별도로 설치한다.
+
+### 모든 프로젝트에서 개인 스킬로 사용 (Windows PowerShell)
 
 같은 이름의 스킬 폴더가 없을 때 아래 명령으로 설치한다.
 
 ```powershell
-$documentSkillsRoot = if ($env:CODEX_HOME) { Join-Path $env:CODEX_HOME 'skills' } else { Join-Path $env:USERPROFILE '.codex\skills' }
+$documentSkillsRoot = Join-Path $env:USERPROFILE '.agents\skills'
 New-Item -ItemType Directory -Force -Path $documentSkillsRoot | Out-Null
 git clone https://github.com/YGseok/DocumentSetting.git (Join-Path $documentSkillsRoot 'document-writing')
 ```
 
-설치 후 Codex의 스킬 목록에서 `document-writing`이 표시되는지 확인한다. 목록에 보이지 않으면 새 작업이나 앱 재시작 후 다시 확인한다. 호출 예:
+Codex는 `$HOME/.agents/skills`를 사용자 스킬 위치로 탐색하며, 여기에 설치한 스킬은 모든 프로젝트에서 사용할 수 있다. 설치 후 새 작업을 열어 `document-writing`이 표시되는지 확인한다. 목록에 보이지 않으면 앱을 재시작한 뒤 다시 확인한다. 호출 예:
 
 ```text
 $document-writing 공통 작성 규칙으로 기획서를 정리해줘.
@@ -50,6 +52,8 @@ $document-writing 메이크 드라마 레퍼런스를 참고해 전투 콘텐츠
 ```
 
 개인 스킬 설치는 이 PC의 파일시스템 권한과 설정에 따라 별도 허용이 필요할 수 있다. 저장소를 내려받는 것만으로 모든 기존 대화에 자동 반영되는 것은 아니다.
+
+Codex의 탐색 범위와 적용 우선순위는 [공식 Skills 문서](https://developers.openai.com/codex/skills/)와 [공식 AGENTS.md 문서](https://developers.openai.com/codex/guides/agents-md/)를 기준으로 한다.
 
 ## HTML 문서 작업
 
