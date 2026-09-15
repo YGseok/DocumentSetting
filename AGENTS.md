@@ -2,6 +2,7 @@
 
 이 저장소에서 문서 작성·수정·정리 작업을 시작할 때 `SKILL.md`와 `default/writing-rules.md`를 읽고 적용한다.
 
+- HTML 문서 작성·수정 작업에서는 `default/html-writing-rules.md`도 반드시 읽고 적용한다.
 - 디폴트 영역은 모든 문서에 공통 적용하는 작성 규칙이다.
 - 메이크 드라마 작업일 때만 `references/make-drama/README.md`를 읽고 필요한 자료를 추가로 참조한다.
 - 사용자 현재 지시가 저장된 기본 규칙보다 우선한다.

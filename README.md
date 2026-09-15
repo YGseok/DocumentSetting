@@ -9,7 +9,8 @@ DocumentSetting/
 ├── SKILL.md                       스킬 진입점
 ├── AGENTS.md                      이 저장소에서 작업할 때 적용할 지침
 ├── default/
-│   └── writing-rules.md           게임 무관 공통 문서 작성 규칙
+│   ├── writing-rules.md           게임 무관 공통 문서 작성 규칙
+│   └── html-writing-rules.md      HTML 출력·레이아웃·전달·검수 규칙
 └── references/
     └── make-drama/
         ├── README.md             메이크 드라마 프로젝트 안내
@@ -49,6 +50,16 @@ $document-writing 메이크 드라마 레퍼런스를 참고해 전투 콘텐츠
 ```
 
 개인 스킬 설치는 이 PC의 파일시스템 권한과 설정에 따라 별도 허용이 필요할 수 있다. 저장소를 내려받는 것만으로 모든 기존 대화에 자동 반영되는 것은 아니다.
+
+## HTML 문서 작업
+
+공통 문체와 정보 구성은 [공통 작성 규칙](default/writing-rules.md)을, HTML의 시각 표현과 파일 전달은 [HTML 작성 규칙](default/html-writing-rules.md)을 함께 적용한다. `SKILL.md`와 `AGENTS.md`에 HTML 작업 시 추가로 읽도록 지정되어 있다.
+
+```text
+$document-writing 이 기획서를 HTML 문서로 작성해줘. 공통 규칙과 HTML 작성 규칙을 적용해줘.
+```
+
+HTML 규칙은 남색 그라데이션 헤더, 흰색 문서 카드, 표·흐름도·상태 박스, 반응형·인쇄 규칙과 단일 HTML 파일 전달 방식을 다룬다. 특정 PC의 원본 파일 경로 없이 이 저장소만으로 규칙을 읽을 수 있다.
 
 ## PC 간 동기화
 
