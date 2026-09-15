@@ -24,6 +24,7 @@
 | 효과 뷰어 | https://anyabot.github.io/MAD-Viewer/effects/ | 효과 분류와 여러 캐릭터의 타깃·범위·조건 표시 예시 |
 | 스테이지 뷰어 | https://anyabot.github.io/MAD-Viewer/stages/ | 모드 분류, 특별 조달의 3개 존 |
 | 공장 데이터 1 | https://anyabot.github.io/MAD-Viewer/stage/?id=3040101 | 스테이지/웨이브/NPC/보상/리소스 연결 구조 예시 |
+| 버스트 사용 | https://app.notion.com/p/32908a056132808d96eae902d0745952 | 수동·AUTO·SET 사용 조건, 상태 전환, 동시 사용 우선순위 |
 
 뷰어는 사용자가 제공한 유저 제작 참고 도구다. 표시된 번역·필터·데이터 시점이 내부 최신 기획과 다를 수 있다. 미출시 포함 필터의 존재를 확인했으나 미출시 항목을 전부 수집하지 않았다.
 
