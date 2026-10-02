@@ -16,7 +16,8 @@ DocumentSetting/
         ├── README.md             메이크 드라마 프로젝트 안내
         ├── game-context.md       게임 정보
         ├── document-analysis.md  사용자가 지정한 기획서 분석
-        └── sources.md            참고 문서 URL과 확인 상태
+        ├── sources.md            참고 문서 URL과 확인 상태
+        └── designs/              아이디어·검토 중·픽스된 기획 작업
 ```
 
 ## 다른 PC에서 사용
@@ -87,6 +88,7 @@ git push origin main
 
 - 게임과 무관한 작성 규칙은 `default/`에 둔다.
 - 게임 정보·개별 문서 분석·참고 문서 경로는 `references/<프로젝트>/`에 둔다.
+- 새 아이디어와 기획 작업은 프로젝트의 `designs/`에 저장하고 현재 게임 정보와 상태를 구분한다.
 - 새 프로젝트를 추가할 때는 프로젝트 안내를 만들고 `SKILL.md`에서 연결한다.
 - 모델의 대화 기억 대신 Git에 저장한 파일을 기준으로 유지한다.
 - 노션 링크의 접근 권한과 원문은 GitHub 동기화와 별개다. 계정 인증 정보는 저장하지 않는다.
